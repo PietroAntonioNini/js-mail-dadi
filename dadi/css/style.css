@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
 
@@ -40,20 +46,13 @@ body {
     font-size: 18px;
 }
 
-.dice {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+#result {
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.dice .you,
-.dice .pc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+#info {
+    margin-top: 40px;
 
-.dice img {
-    width: 200px;
-    margin-top: 70px;
+    font-size: 18px;
 }
