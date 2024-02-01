@@ -16,14 +16,21 @@ send.addEventListener("click",
         email = document.querySelector("input").value;
         console.log(email);
 
-        //controllo se il dato inserito è presente nel database
-        if (email === emails[0] || email === emails[1] || email === emails[2] || email === emails[3]) {
-            document.querySelector("#result").innerText = "Puoi accedere al sito!";
-            document.querySelector("#alert").innerText = "";
+        if(email === "") {
+            document.querySelector("#result").innerText = "Inserisci un email!";
 
         } else {
-            document.querySelector("#result").innerText = "Non puoi accedere al sito!";
-            document.querySelector("#alert").innerText = `L'email "${email}" non risulta registrata!`;
+
+            //controllo se il dato inserito è presente nel database
+            if (email === emails[0] || email === emails[1] || email === emails[2] || email === emails[3]) {
+                document.querySelector("#result").innerText = "Puoi accedere al sito!";
+                document.querySelector("#alert").innerText = "";
+
+            } else {
+                document.querySelector("#result").innerText = "Non puoi accedere al sito!";
+                document.querySelector("#alert").innerText = `L'email "${email}" non risulta registrata!`;
+            }
         }
+
     }
 )
