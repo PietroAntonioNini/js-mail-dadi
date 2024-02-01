@@ -27,23 +27,16 @@ body {
 }
 
 .container h1 {
-    margin: 50px 0;
+    margin: 50px 0 80px;
 
     font-size: 50px;
     text-transform: uppercase;
 }
 
-.input input {
-    width: 300px;
-    height: 30px;
-    margin-bottom: 100px;
-    font-size: 18px;
-    text-align: center;
-}
-
 .input #roll {
-    padding: 3px 8px;
-    font-size: 18px;
+    margin-bottom: 70px;
+    padding: 10px 20px;
+    font-size: 30px;
 }
 
 #result {
